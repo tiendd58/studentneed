@@ -1,4 +1,3 @@
-
 <nav class="navbar navbar-inverse">
 	<div class="container-fluid">
     	<div class="navbar-header">
@@ -12,9 +11,15 @@
          <div>
          	<div class="collapse navbar-collapse" id="myNavbar">
          	<ul class="nav navbar-nav">
-            	<li class="active"><a href="trangchu.php">Home</a></li>
-                <li><a href="#">Đăng tin</a></li>
-                <li><a href="#">Tin mới</a></li>
+            	<li class="active"><a href="">Home</a></li>
+          		 <?php
+				$html="<ul>";
+				foreach($menu as $m){
+					$html.="<li><a href='".$m['link']."'>".$m['name']."</a></li>";
+				}
+				$html.="</ul>";
+				echo $html;
+				?>	
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Help<span class="caret"></span></a>
                       <ul class="dropdown-menu">
                         <li><a href="#">Mr.Trọng</a></li>
