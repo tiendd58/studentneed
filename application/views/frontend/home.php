@@ -16,9 +16,16 @@
     <?php $this->load->view('frontend/modules/menu.php');?>
   </div>
   <div class="container">
-		<?php $this->load->view('frontend/modules/slide.php');?>
-    <?php $this->load->view('frontend/modules/boxtin.php');?>
-    <?php $this->load->view('frontend/modules/footer.php');?>		
+  	<?php
+		if(isset($pages)&&isset($cat)){
+			$this->load->view("frontend/components/".$pages."/".$cat);
+		}
+		else{ 
+			$this->load->view('frontend/modules/slide.php');
+    		$this->load->view('frontend/modules/boxtin.php');
+    		$this->load->view('frontend/modules/footer.php');
+		}
+	?>		
   </div>
 </div><!--/*end container*/-->
 <body>
