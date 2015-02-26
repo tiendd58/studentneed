@@ -12,28 +12,26 @@
          	<div class="collapse navbar-collapse" id="myNavbar">
          	<ul class="nav navbar-nav">
             	<li class="active"><a href="">Home</a></li>
-              <li>
-          		 <?php    
-            				foreach($menu as $m){
-            					$html="<li><a href='".$m['link']."'>".$m['name']."</a></li>";
-                      echo $html;
-            				}
-            				
-            				
-				        ?>
-                </li>
+          		 <?php
+				$html="<ul>";
+				foreach($menu as $m){
+					$html.="<li><a href='".$m['link']."'>".$m['name']."</a></li>";
+				}
+				$html.="</ul>";
+				echo $html;
+				?>	
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Help<span class="caret"></span></a>
-                          <ul class="dropdown-menu">
-                            <li><a href="#">Mr.Trọng</a></li>
-                            <li><a href="#">Mr.Tiến</a></li>
-                            <li><a href="#">Mr.Quang</a></li>
-                          </ul>
-            		</li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Mr.Trọng</a></li>
+                        <li><a href="#">Mr.Tiến</a></li>
+                        <li><a href="#">Mr.Quang</a></li>
+                      </ul>
+        		</li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
                 <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-          </ul>
+            </ul>
             </div>
           </div>
      </div>

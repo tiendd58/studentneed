@@ -1,35 +1,12 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-
-class Dangtin extends CI_Controller {
-	public function __construct()
+class Editor extends CI_Controller
+{
+    public function index()
     {
-        // Call the Model constructor
-        parent::__construct();
-		$this->load->model("frontend/mmenu");
-		$this->load->model("frontend/mpost");
-		$this->data['menu']=$this->mmenu->menu_by(1,0);
-		$this->data['pages']='dangtin';
+        
     }
-	public function index()
-	{
-		$this->data['cat']='them';
-		$this->load->database();
-		$this->load->view('frontend/home',$this->data);
-	}
-	function save(){                          
-		$data = array( 
-		'recruitment'=>$_POST['recruitment'], 
-		'title' => $_POST['title'], 
-		'number' => $_POST['number'], 
-		'position' => $_POST['position'], 
-		'postdate' => $_POST['postdate'], 
-		'outdate' => $_POST['outdate'],
-		'describer' => $_POST['describer']
-		); 
-		$this->mpost->insert($data); 
-		redirect(""); 
-	}
-	public function them()
+    
+    public function them()
     {
         //call helper form
         $this->load->helper('form');
@@ -75,4 +52,5 @@ class Dangtin extends CI_Controller {
              ;
         return $editor;
     }
-}
+}  
+?>

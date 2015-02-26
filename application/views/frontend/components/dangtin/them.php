@@ -1,7 +1,5 @@
-<?
-	include("../editor/editor1.php");
-?>
-<form action="../../modules/loaitin/modules/loaitin/xuly.php" method="post" enctype="multipart/form-data">
+<div id="dangtin"> 
+<form action="<?php echo base_url(); ?>dangtin/save" method="post" enctype="multipart/form-data">
 <div >
 	<table width="758" border="0">
 		<tr>
@@ -9,7 +7,7 @@
 		</tr>
 		<tr>
 			<td width="123" height="40">Tên công ty</td>
-			<td colspan="3"><input type="text" name="recruitmentid" id="recruitmentid" size="60"></td>
+			<td colspan="3"><input type="text" name="recruitment" id="recruitment" size="60"></td>
 		</tr>
 		<tr>
 			<td height="74">Tiêu đề</td>
@@ -25,18 +23,16 @@
 		</tr>
 		<tr>
 			<td height="56">Ngày đăng</td>
-			<td width="161"><input type="text" name="postdate" id="postdate" /></td>
-			<td width="120">Ngày hết hạn</td>
+			<td width="199"><input type="text" name="postdate" id="postdate" /></td>
+			<td width="82">Ngày hết hạn</td>
 			<td width="336"><input type="text" name="outdate" id="outdate" /></td>
 		</tr>
 		<tr>
 			<td><p> Mô tả </p>
       			<p>công việc</p></td>
-			<td colspan="3"><textarea name="describer" cols="70" rows="20" id="describer"></textarea></td>
-		</tr>
-		<tr>
-			<td height="40">Tóm tắt</td>
-			<td colspan="3"><textarea name="brief" cols="70" rows="5" id="brief"></textarea></td>
+                
+			<td colspan="3">
+            <textarea name="describer" cols="70" rows="20" id="describer"></textarea></td>
 		</tr>
 		<tr>
 			<td height="40">Số lượng</td>
@@ -46,19 +42,12 @@
 			<td height="66">&nbsp;</td>
 			<td colspan="2">
             	<p>
-					<input type="submit" name="them" id="them" value="       Thêm       ">
+					<input type="submit" name="them" id="them" value="      Đăng Tin       ">
 				</p>
 			</td>
-			<td>
-				<a href="../../modules/loaitin/index.php?quanli=loaitin&amp;ac=lietke"> 
-
-				<p>
-					<input name="Button" type="button"    value="Danh sách tin đã đăng">
-				</p>        
-   
-				</a>
-			</td>
+			
 		</tr>
 	</table>
 </div>
 </form>
+</div>

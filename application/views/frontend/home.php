@@ -19,6 +19,7 @@
   	<?php
 		if(isset($pages)&&isset($cat)){
 			$this->load->view("frontend/components/".$pages."/".$cat);
+			$this->load->view('frontend/modules/footer.php');
 		}
 		else{ 
 			$this->load->view('frontend/modules/slide.php');

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 25, 2015 at 02:27 PM
+-- Generation Time: Feb 26, 2015 at 05:34 PM
 -- Server version: 5.6.11
 -- PHP Version: 5.5.3
 
@@ -108,9 +108,16 @@ CREATE TABLE IF NOT EXISTS `svc_post` (
   `outdate` date NOT NULL,
   `describer` longtext NOT NULL,
   `img` varchar(100) NOT NULL,
-  `brief` tinytext NOT NULL,
+  `status` int(2) NOT NULL,
   PRIMARY KEY (`idpost`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=34 ;
+
+--
+-- Dumping data for table `svc_post`
+--
+
+INSERT INTO `svc_post` (`idpost`, `recruitment`, `title`, `number`, `position`, `postdate`, `outdate`, `describer`, `img`, `status`) VALUES
+(31, 'Tuyển thực tập', 'Tuyển thực tập', 10, 'Lập trình java', '2015-02-03', '2015-02-10', ' Tuyển 10 ltv   a  ', '', 1);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
