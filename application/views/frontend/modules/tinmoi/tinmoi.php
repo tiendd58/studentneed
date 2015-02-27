@@ -3,6 +3,7 @@
 	$baiviet=mysql_query($sql);
 ?>
 <div class="body">
+
 	<div >
     	<ul>
 		<?
@@ -26,5 +27,7 @@
 		<?
 		}
 		?>
+		</ul>
 	</div>
 </div>
+

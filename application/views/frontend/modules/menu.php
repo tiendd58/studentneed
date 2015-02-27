@@ -13,12 +13,13 @@
          	<ul class="nav navbar-nav">
             	<li class="active"><a href="">Home</a></li>
           		 <?php
-				$html="<ul>";
-				foreach($menu as $m){
-					$html.="<li><a href='".$m['link']."'>".$m['name']."</a></li>";
-				}
-				$html.="</ul>";
-				echo $html;
+				
+          				foreach($menu as $m){
+          					$html="<li><a href='".$m['link']."'>".$m['name']."</a></li>";
+                    echo $html;
+          				}
+			
+				
 				?>	
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Help<span class="caret"></span></a>
                       <ul class="dropdown-menu">

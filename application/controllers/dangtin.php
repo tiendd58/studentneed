@@ -24,7 +24,8 @@ class Dangtin extends CI_Controller {
 		'position' => $_POST['position'], 
 		'postdate' => $_POST['postdate'], 
 		'outdate' => $_POST['outdate'],
-		'describer' => $_POST['describer']
+		'describer' => $_POST['describer'],
+		'status' => $_POST['status']
 		); 
 		$this->mpost->insert($data); 
 		redirect(""); 

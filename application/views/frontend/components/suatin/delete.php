@@ -1,5 +1,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href=" <?php echo base_url();?> "></base>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <link href=" <?php echo base_url();?> public/frontend/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <div id="suatin"> 
+<div class="container">
+<div class="jumbotron">
 <form action="" method="post" method="post">
 <div >
 	<table width="758" border="0">
@@ -38,15 +46,19 @@
 			<td height="66">&nbsp;</td>
 			<td colspan="2">
             	<p>
-					<input type="submit" name="delete" value="Xác nhận" id="delete">
-				</p></td>
+            		<input type="submit" name="delete" value="Xác nhận" id="delete">
+				</p>
+			</td>
     		<td>
             	<a href="http://localhost/studentneed/tinmoi"> 
 
 					<p>&nbsp;</p>        
 				</a>
+			</td>
 		</tr>
 	</table>
 </div>
 </form>
+</div>
+</div>
 </div>

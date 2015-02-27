@@ -1,18 +1,18 @@
-<table width="500" border="0">
-	<tr>
-    	<td width="512" height="50">
-        	<div align="center">
-            	<strong>CÁC TIN ĐÃ ĐĂNG</strong>
-            </div>	
-        </td>
-	</tr>
-</table>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href=" <?php echo base_url();?> "></base>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <link href=" <?php echo base_url();?> public/frontend/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <div >
-	<table width="594" border="1" id="customers">
+<div class="jumbotron">
+	<table class="table" id="customers">
+		<caption><h1>Các tin đã đăng</h1></caption>
 		<tr>
-    		<td width="401"><div align="center">Tiêu đề</div></td>
-    		<td width="80"><div align="center">Ngày đăng</div></td>
-    		<td colspan="2"><div align="center">Quản lý</div></td>
+    		<th>Tiêu đề</th>
+    		<th>Ngày đăng</th>
+    		<th colspan="2">Quản lý</th>
 		</tr>
 <?php
 	if(isset($post) && count($post))
@@ -26,14 +26,15 @@
 		<td width="44">
 			<div align="center">
 			  <a href="<?php echo "http://localhost/studentneed/suatin/edit/".$val['idpost'] ?>">
-   			  <img src="public/frontend/images/b_edit.png" />
+   			  <img src="public/frontend/images/b_edit.png" data-toggle="tooltip" data-placement="left" title="edit"/>
        			</a> 
         	</div>
 		</td>	
-        <td width="41"><a href="<?php echo "http://localhost/studentneed/suatin/delete/".$val['idpost'] ?>"><img src="public/frontend/images/b_drop.png" /></a></td>
+        <td width="41"><a href="<?php echo "http://localhost/studentneed/suatin/delete/".$val['idpost'] ?>"><img src="public/frontend/images/b_drop.png" data-toggle="tooltip" data-placement="left" title="delete" /></a></td>
 	</tr>
 <?php
 	}
 ?>
 </table>
+</div>
 </div>     
