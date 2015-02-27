@@ -44,7 +44,9 @@ class Suatin extends CI_Controller {
 			$this->db->where('idpost',$id)->update('post',$data);
 			header('Location: http://localhost/studentneed/tinmoi');
 		}	
-		$this->load->view('frontend/components/suatin/edit',$data);	
+		$this->data['post']=$data['post'];
+		$this->data['cat']='edit';
+		$this->load->view('frontend/home',$this->data);	
 	}
 	public function delete($id){
 		$id=(int)$id;
@@ -56,6 +58,8 @@ class Suatin extends CI_Controller {
 		if($this->input->post('delete')){ 
 			$this->db->delete('post',array('idpost'=> $id));
 		}
-		$this->load->view('frontend/components/suatin/delete',$data);		
+		$this->data['post']=$data['post'];
+		$this->data['cat']='delete';
+		$this->load->view('frontend/home',$this->data);	
 	}
 }

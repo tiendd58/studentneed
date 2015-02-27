@@ -1,5 +1,13 @@
-<div id="dangtin"> 
-
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href=" <?php echo base_url();?> "></base>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <link href=" <?php echo base_url();?> public/frontend/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<div id="suatin"> 
+<div class="container">
+<div class="jumbotron">
 <form action="<?php echo base_url(); ?>dangtin/save" method="post" enctype="multipart/form-data">
 <div >
 	<table width="758" border="0">
@@ -56,4 +64,5 @@
 	</table>
 </div>
 </form>
+</div>
 </div>

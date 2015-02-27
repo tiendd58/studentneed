@@ -14,7 +14,6 @@ class Tinmoi extends CI_Controller {
 	public function index()
 	{
 		$this->data['cat']='tin';
-		$this->load->database();
 		$this->load->view('frontend/home',$this->data);
 	}
 }
