@@ -6,7 +6,6 @@ class Mpost extends CI_Model{
     }
 	public function post_by(){
 		$table=$this->db->dbprefix('post');	
-		$this->db->where('status',1);
 		$this->db->order_by('title','asc');
 		$query=$this->db->get($table);
 		return $query->result_array();

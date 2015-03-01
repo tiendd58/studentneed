@@ -15,13 +15,13 @@
     		<th colspan="2">Quản lý</th>
 		</tr>
 <?php
-	if(isset($post) && count($post))
-		foreach($post as $val){
-			$id=$val['idpost'];
-			
+	foreach($post as $val){
+		
 ?>
 	<tr>
-		<td><?php echo $val['title']?></td>
+		<td><a href="<?php echo "http://localhost/studentneed/hientin/show/".$val['idpost'] ?>">
+				<h1><?php echo $val["title"]?></h1>
+			</a></td>
 		<td><?php echo $val['postdate']?></td>
 		<td width="44">
 			<div align="center">

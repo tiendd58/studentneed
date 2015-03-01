@@ -8,6 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   <link href=" <?php echo base_url();?> public/frontend/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="public/frontend/css/css/style.css" rel="stylesheet" type="text/css" />
 
   <title>Sinh viên cần</title>
 </head>
@@ -23,7 +24,7 @@
 		}
 		else{ 
 			$this->load->view('frontend/modules/slide.php');
-    		$this->load->view('frontend/modules/boxtin.php');
+			$this->load->view('frontend/modules/boxtin.php');
     		$this->load->view('frontend/modules/footer.php');
 		}
 	?>		
